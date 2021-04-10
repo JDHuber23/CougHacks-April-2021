@@ -19,42 +19,64 @@ namespace SmartPantry
 
         private void cookedButton_Click(object sender, EventArgs e)
         {
-            // This section for what happens when the "I cooked something!" button is clicked.
+            /*
+             * This section for what happens when the "I cooked something!" button is clicked.
+             * Basically, if you make something that uses more than one ingredient,
+             * you can click here to deduct entire recipes worth of ingredients at once.
+             * The ingredients and amounts (servings/serving sizes) will then be deducted
+             * from the master food list. Ex: PB&J
+             */
+
         }
 
         private void ateButton_Click(object sender, EventArgs e)
         {
-            // This section for what happens when the "I ate something!" button is clicked.
+            /* This section for what happens when the "I ate something!" button is clicked.
+             * Basically, if you eat something individually (i.e. snacking) you go here
+             * to deduct the amount. Ex: two servings of potato chips.
+             */
         }
 
         private void allFoodButton_Click(object sender, EventArgs e)
         {
-            // This section for what happens when the "All Food" button is clicked.
+            /* This section for what happens when the "All Food" button is clicked.
+             * If you click here, lists all food items currently in inventory.
+             */
         }
 
         private void pantryButton_Click(object sender, EventArgs e)
         {
-            // This section for what happens when the "Pantry" button is clicked.
+            /* This section for what happens when the "Pantry" button is clicked.
+             * If you click here, lists all food items currently in your pantry.
+             */
         }
 
         private void refrigeratorButton_Click(object sender, EventArgs e)
         {
-            // This section for what happens when the "Refrigerator" button is clicked.
+            /* This section for what happens when the "Refrigerator" button is clicked.
+             * If you click here, lists all food items currently in your fridge.
+             */
         }
 
         private void freezerButton_Click(object sender, EventArgs e)
         {
-            // This section for what happens when the "Freezer" button is clicked.
+            /* This section for what happens when the "Freezer" button is clicked.
+             * If you click here, lists all food items currently in your freezer.
+             */
         }
 
         private void recipeButton_Click(object sender, EventArgs e)
         {
-            // This section for what happens when the "Recipes" button is clicked.
+            /* This section for what happens when the "Recipes" button is clicked.
+             * If you click here, lists all current recipes and allows for creation of new ones.
+             */
         }
 
         private void shoppingButton_Click(object sender, EventArgs e)
         {
-            // This section for what happens when the "Shopping List" button is clicked.
+            /* This section for what happens when the "Shopping List" button is clicked.
+             * If you click here, lists all food items currently in your shopping list.
+             */
         }
     }
 }
