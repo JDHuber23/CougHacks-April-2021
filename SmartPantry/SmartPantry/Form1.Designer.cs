@@ -30,13 +30,25 @@ namespace SmartPantry
         private void InitializeComponent()
         {
             this.cookedButton = new System.Windows.Forms.Button();
-            this.pantryButton = new System.Windows.Forms.Button();
-            this.refrigeratorButton = new System.Windows.Forms.Button();
-            this.allFoodButton = new System.Windows.Forms.Button();
-            this.freezerButton = new System.Windows.Forms.Button();
             this.ateButton = new System.Windows.Forms.Button();
-            this.recipeButton = new System.Windows.Forms.Button();
             this.shoppingButton = new System.Windows.Forms.Button();
+            this.tabControl = new System.Windows.Forms.TabControl();
+            this.allFoodTab = new System.Windows.Forms.TabPage();
+            this.allFoodLB = new System.Windows.Forms.ListBox();
+            this.pantryTab = new System.Windows.Forms.TabPage();
+            this.pantryLB = new System.Windows.Forms.ListBox();
+            this.refrigeratorTab = new System.Windows.Forms.TabPage();
+            this.refrigeratorLB = new System.Windows.Forms.ListBox();
+            this.freezerTab = new System.Windows.Forms.TabPage();
+            this.freezerLB = new System.Windows.Forms.ListBox();
+            this.recipesTab = new System.Windows.Forms.TabPage();
+            this.recipesLB = new System.Windows.Forms.ListBox();
+            this.tabControl.SuspendLayout();
+            this.allFoodTab.SuspendLayout();
+            this.pantryTab.SuspendLayout();
+            this.refrigeratorTab.SuspendLayout();
+            this.freezerTab.SuspendLayout();
+            this.recipesTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // cookedButton
@@ -49,46 +61,6 @@ namespace SmartPantry
             this.cookedButton.UseVisualStyleBackColor = true;
             this.cookedButton.Click += new System.EventHandler(this.cookedButton_Click);
             // 
-            // pantryButton
-            // 
-            this.pantryButton.Location = new System.Drawing.Point(260, 120);
-            this.pantryButton.Name = "pantryButton";
-            this.pantryButton.Size = new System.Drawing.Size(382, 56);
-            this.pantryButton.TabIndex = 1;
-            this.pantryButton.Text = "Pantry";
-            this.pantryButton.UseVisualStyleBackColor = true;
-            this.pantryButton.Click += new System.EventHandler(this.pantryButton_Click);
-            // 
-            // refrigeratorButton
-            // 
-            this.refrigeratorButton.Location = new System.Drawing.Point(260, 208);
-            this.refrigeratorButton.Name = "refrigeratorButton";
-            this.refrigeratorButton.Size = new System.Drawing.Size(381, 58);
-            this.refrigeratorButton.TabIndex = 2;
-            this.refrigeratorButton.Text = "Refrigerator";
-            this.refrigeratorButton.UseVisualStyleBackColor = true;
-            this.refrigeratorButton.Click += new System.EventHandler(this.refrigeratorButton_Click);
-            // 
-            // allFoodButton
-            // 
-            this.allFoodButton.Location = new System.Drawing.Point(259, 24);
-            this.allFoodButton.Name = "allFoodButton";
-            this.allFoodButton.Size = new System.Drawing.Size(380, 58);
-            this.allFoodButton.TabIndex = 3;
-            this.allFoodButton.Text = "All Food";
-            this.allFoodButton.UseVisualStyleBackColor = true;
-            this.allFoodButton.Click += new System.EventHandler(this.allFoodButton_Click);
-            // 
-            // freezerButton
-            // 
-            this.freezerButton.Location = new System.Drawing.Point(260, 302);
-            this.freezerButton.Name = "freezerButton";
-            this.freezerButton.Size = new System.Drawing.Size(380, 59);
-            this.freezerButton.TabIndex = 4;
-            this.freezerButton.Text = "Freezer";
-            this.freezerButton.UseVisualStyleBackColor = true;
-            this.freezerButton.Click += new System.EventHandler(this.freezerButton_Click);
-            // 
             // ateButton
             // 
             this.ateButton.Location = new System.Drawing.Point(14, 266);
@@ -98,16 +70,6 @@ namespace SmartPantry
             this.ateButton.Text = "I Ate Something!";
             this.ateButton.UseVisualStyleBackColor = true;
             this.ateButton.Click += new System.EventHandler(this.ateButton_Click);
-            // 
-            // recipeButton
-            // 
-            this.recipeButton.Location = new System.Drawing.Point(260, 395);
-            this.recipeButton.Name = "recipeButton";
-            this.recipeButton.Size = new System.Drawing.Size(379, 59);
-            this.recipeButton.TabIndex = 6;
-            this.recipeButton.Text = "Recipes";
-            this.recipeButton.UseVisualStyleBackColor = true;
-            this.recipeButton.Click += new System.EventHandler(this.recipeButton_Click);
             // 
             // shoppingButton
             // 
@@ -119,21 +81,136 @@ namespace SmartPantry
             this.shoppingButton.UseVisualStyleBackColor = true;
             this.shoppingButton.Click += new System.EventHandler(this.shoppingButton_Click);
             // 
+            // tabControl
+            // 
+            this.tabControl.Controls.Add(this.allFoodTab);
+            this.tabControl.Controls.Add(this.pantryTab);
+            this.tabControl.Controls.Add(this.refrigeratorTab);
+            this.tabControl.Controls.Add(this.freezerTab);
+            this.tabControl.Controls.Add(this.recipesTab);
+            this.tabControl.Location = new System.Drawing.Point(255, 24);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(367, 431);
+            this.tabControl.TabIndex = 8;
+            // 
+            // allFoodTab
+            // 
+            this.allFoodTab.Controls.Add(this.allFoodLB);
+            this.allFoodTab.Location = new System.Drawing.Point(4, 22);
+            this.allFoodTab.Name = "allFoodTab";
+            this.allFoodTab.Padding = new System.Windows.Forms.Padding(3);
+            this.allFoodTab.Size = new System.Drawing.Size(359, 405);
+            this.allFoodTab.TabIndex = 0;
+            this.allFoodTab.Text = "All Food";
+            this.allFoodTab.UseVisualStyleBackColor = true;
+            // 
+            // allFoodLB
+            // 
+            this.allFoodLB.FormattingEnabled = true;
+            this.allFoodLB.Location = new System.Drawing.Point(3, 2);
+            this.allFoodLB.Name = "allFoodLB";
+            this.allFoodLB.Size = new System.Drawing.Size(351, 394);
+            this.allFoodLB.TabIndex = 0;
+            this.allFoodLB.SelectedIndexChanged += new System.EventHandler(this.allFoodLB_SelectedIndexChanged);
+            // 
+            // pantryTab
+            // 
+            this.pantryTab.Controls.Add(this.pantryLB);
+            this.pantryTab.Location = new System.Drawing.Point(4, 22);
+            this.pantryTab.Name = "pantryTab";
+            this.pantryTab.Padding = new System.Windows.Forms.Padding(3);
+            this.pantryTab.Size = new System.Drawing.Size(360, 405);
+            this.pantryTab.TabIndex = 1;
+            this.pantryTab.Text = "Pantry";
+            this.pantryTab.UseVisualStyleBackColor = true;
+            // 
+            // pantryLB
+            // 
+            this.pantryLB.FormattingEnabled = true;
+            this.pantryLB.Location = new System.Drawing.Point(5, 5);
+            this.pantryLB.Name = "pantryLB";
+            this.pantryLB.Size = new System.Drawing.Size(351, 394);
+            this.pantryLB.TabIndex = 1;
+            this.pantryLB.SelectedIndexChanged += new System.EventHandler(this.pantryLB_SelectedIndexChanged);
+            // 
+            // refrigeratorTab
+            // 
+            this.refrigeratorTab.Controls.Add(this.refrigeratorLB);
+            this.refrigeratorTab.Location = new System.Drawing.Point(4, 22);
+            this.refrigeratorTab.Name = "refrigeratorTab";
+            this.refrigeratorTab.Padding = new System.Windows.Forms.Padding(3);
+            this.refrigeratorTab.Size = new System.Drawing.Size(360, 405);
+            this.refrigeratorTab.TabIndex = 2;
+            this.refrigeratorTab.Text = "Refrigerator";
+            this.refrigeratorTab.UseVisualStyleBackColor = true;
+            // 
+            // refrigeratorLB
+            // 
+            this.refrigeratorLB.FormattingEnabled = true;
+            this.refrigeratorLB.Location = new System.Drawing.Point(5, 5);
+            this.refrigeratorLB.Name = "refrigeratorLB";
+            this.refrigeratorLB.Size = new System.Drawing.Size(351, 394);
+            this.refrigeratorLB.TabIndex = 1;
+            this.refrigeratorLB.SelectedIndexChanged += new System.EventHandler(this.refrigeratorLB_SelectedIndexChanged);
+            // 
+            // freezerTab
+            // 
+            this.freezerTab.Controls.Add(this.freezerLB);
+            this.freezerTab.Location = new System.Drawing.Point(4, 22);
+            this.freezerTab.Name = "freezerTab";
+            this.freezerTab.Padding = new System.Windows.Forms.Padding(3);
+            this.freezerTab.Size = new System.Drawing.Size(360, 405);
+            this.freezerTab.TabIndex = 3;
+            this.freezerTab.Text = "Freezer";
+            this.freezerTab.UseVisualStyleBackColor = true;
+            // 
+            // freezerLB
+            // 
+            this.freezerLB.FormattingEnabled = true;
+            this.freezerLB.Location = new System.Drawing.Point(5, 5);
+            this.freezerLB.Name = "freezerLB";
+            this.freezerLB.Size = new System.Drawing.Size(351, 394);
+            this.freezerLB.TabIndex = 1;
+            this.freezerLB.SelectedIndexChanged += new System.EventHandler(this.freezerLB_SelectedIndexChanged);
+            // 
+            // recipesTab
+            // 
+            this.recipesTab.Controls.Add(this.recipesLB);
+            this.recipesTab.Location = new System.Drawing.Point(4, 22);
+            this.recipesTab.Name = "recipesTab";
+            this.recipesTab.Padding = new System.Windows.Forms.Padding(3);
+            this.recipesTab.Size = new System.Drawing.Size(360, 405);
+            this.recipesTab.TabIndex = 4;
+            this.recipesTab.Text = "Recipes";
+            this.recipesTab.UseVisualStyleBackColor = true;
+            // 
+            // recipesLB
+            // 
+            this.recipesLB.FormattingEnabled = true;
+            this.recipesLB.Location = new System.Drawing.Point(5, 5);
+            this.recipesLB.Name = "recipesLB";
+            this.recipesLB.Size = new System.Drawing.Size(351, 394);
+            this.recipesLB.TabIndex = 1;
+            this.recipesLB.SelectedIndexChanged += new System.EventHandler(this.recipesLB_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(853, 502);
+            this.Controls.Add(this.tabControl);
             this.Controls.Add(this.shoppingButton);
-            this.Controls.Add(this.recipeButton);
             this.Controls.Add(this.ateButton);
-            this.Controls.Add(this.freezerButton);
-            this.Controls.Add(this.allFoodButton);
-            this.Controls.Add(this.refrigeratorButton);
-            this.Controls.Add(this.pantryButton);
             this.Controls.Add(this.cookedButton);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.tabControl.ResumeLayout(false);
+            this.allFoodTab.ResumeLayout(false);
+            this.pantryTab.ResumeLayout(false);
+            this.refrigeratorTab.ResumeLayout(false);
+            this.freezerTab.ResumeLayout(false);
+            this.recipesTab.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -141,13 +218,19 @@ namespace SmartPantry
         #endregion
 
         private System.Windows.Forms.Button cookedButton;
-        private System.Windows.Forms.Button pantryButton;
-        private System.Windows.Forms.Button refrigeratorButton;
-        private System.Windows.Forms.Button allFoodButton;
-        private System.Windows.Forms.Button freezerButton;
         private System.Windows.Forms.Button ateButton;
-        private System.Windows.Forms.Button recipeButton;
         private System.Windows.Forms.Button shoppingButton;
+        private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.TabPage allFoodTab;
+        private System.Windows.Forms.TabPage pantryTab;
+        private System.Windows.Forms.TabPage refrigeratorTab;
+        private System.Windows.Forms.TabPage freezerTab;
+        private System.Windows.Forms.TabPage recipesTab;
+        private System.Windows.Forms.ListBox allFoodLB;
+        private System.Windows.Forms.ListBox pantryLB;
+        private System.Windows.Forms.ListBox refrigeratorLB;
+        private System.Windows.Forms.ListBox freezerLB;
+        private System.Windows.Forms.ListBox recipesLB;
     }
 }
 

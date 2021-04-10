@@ -37,46 +37,36 @@ namespace SmartPantry
              */
         }
 
-        private void allFoodButton_Click(object sender, EventArgs e)
-        {
-            /* This section for what happens when the "All Food" button is clicked.
-             * If you click here, lists all food items currently in inventory.
-             */
-        }
-
-        private void pantryButton_Click(object sender, EventArgs e)
-        {
-            /* This section for what happens when the "Pantry" button is clicked.
-             * If you click here, lists all food items currently in your pantry.
-             */
-        }
-
-        private void refrigeratorButton_Click(object sender, EventArgs e)
-        {
-            /* This section for what happens when the "Refrigerator" button is clicked.
-             * If you click here, lists all food items currently in your fridge.
-             */
-        }
-
-        private void freezerButton_Click(object sender, EventArgs e)
-        {
-            /* This section for what happens when the "Freezer" button is clicked.
-             * If you click here, lists all food items currently in your freezer.
-             */
-        }
-
-        private void recipeButton_Click(object sender, EventArgs e)
-        {
-            /* This section for what happens when the "Recipes" button is clicked.
-             * If you click here, lists all current recipes and allows for creation of new ones.
-             */
-        }
-
         private void shoppingButton_Click(object sender, EventArgs e)
         {
             /* This section for what happens when the "Shopping List" button is clicked.
              * If you click here, lists all food items currently in your shopping list.
              */
+        }
+
+        private void allFoodLB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Clicked on an item in the list.
+        }
+
+        private void pantryLB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Clicked on an item in the list.
+        }
+
+        private void refrigeratorLB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Clicked on an item in the list.
+        }
+
+        private void freezerLB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Clicked on an item in the list.
+        }
+
+        private void recipesLB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Clicked on an item in the list.
         }
     }
 }
