@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmartPantry
 {
-    class User
+    class Recipe
     {
     }
 }
