@@ -44,12 +44,13 @@ namespace SmartPantry
             // 
             // newShoppingItemButton
             // 
+            this.newShoppingItemButton.BackColor = System.Drawing.Color.Silver;
             this.newShoppingItemButton.Location = new System.Drawing.Point(91, 428);
             this.newShoppingItemButton.Name = "newShoppingItemButton";
             this.newShoppingItemButton.Size = new System.Drawing.Size(131, 42);
             this.newShoppingItemButton.TabIndex = 2;
             this.newShoppingItemButton.Text = "New Shopping Item";
-            this.newShoppingItemButton.UseVisualStyleBackColor = true;
+            this.newShoppingItemButton.UseVisualStyleBackColor = false;
             this.newShoppingItemButton.Click += new System.EventHandler(this.newShoppingItemButton_Click);
             // 
             // label2

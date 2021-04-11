@@ -54,35 +54,38 @@ namespace SmartPantry
             // 
             // cookedButton
             // 
+            this.cookedButton.BackColor = System.Drawing.Color.Silver;
             this.cookedButton.Location = new System.Drawing.Point(16, 35);
             this.cookedButton.Margin = new System.Windows.Forms.Padding(2);
             this.cookedButton.Name = "cookedButton";
             this.cookedButton.Size = new System.Drawing.Size(81, 49);
             this.cookedButton.TabIndex = 0;
             this.cookedButton.Text = "I Cooked Something!";
-            this.cookedButton.UseVisualStyleBackColor = true;
+            this.cookedButton.UseVisualStyleBackColor = false;
             this.cookedButton.Click += new System.EventHandler(this.cookedButton_Click);
             // 
             // ateButton
             // 
+            this.ateButton.BackColor = System.Drawing.Color.Silver;
             this.ateButton.Location = new System.Drawing.Point(102, 35);
             this.ateButton.Margin = new System.Windows.Forms.Padding(2);
             this.ateButton.Name = "ateButton";
             this.ateButton.Size = new System.Drawing.Size(81, 49);
             this.ateButton.TabIndex = 5;
             this.ateButton.Text = "I Ate Something!";
-            this.ateButton.UseVisualStyleBackColor = true;
+            this.ateButton.UseVisualStyleBackColor = false;
             this.ateButton.Click += new System.EventHandler(this.ateButton_Click);
             // 
             // shoppingButton
             // 
+            this.shoppingButton.BackColor = System.Drawing.Color.Silver;
             this.shoppingButton.Location = new System.Drawing.Point(188, 35);
             this.shoppingButton.Margin = new System.Windows.Forms.Padding(2);
             this.shoppingButton.Name = "shoppingButton";
             this.shoppingButton.Size = new System.Drawing.Size(81, 49);
             this.shoppingButton.TabIndex = 7;
             this.shoppingButton.Text = "Shopping List";
-            this.shoppingButton.UseVisualStyleBackColor = true;
+            this.shoppingButton.UseVisualStyleBackColor = false;
             this.shoppingButton.Click += new System.EventHandler(this.shoppingButton_Click);
             // 
             // tabControl
