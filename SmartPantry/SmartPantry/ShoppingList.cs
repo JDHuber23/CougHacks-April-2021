@@ -11,11 +11,24 @@ namespace SmartPantry
 
         Dictionary<FoodItem, int> items;
 
-        // Add()
-        // Remove()
+        public ShoppingList()
+        {
+            this.items = new Dictionary<FoodItem, int>();
+        }
 
+        public Dictionary<FoodItem, int> Items
+        {
+            get { return this.items; }
+        }
 
+        public void Add(FoodItem food, int servings)
+        {
+            items.Add(food, servings);
+        }
 
-
+        public void Remove(FoodItem food)
+        {
+            items.Remove(food);
+        }
     }
 }

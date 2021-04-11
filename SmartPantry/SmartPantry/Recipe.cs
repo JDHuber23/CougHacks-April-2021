@@ -10,8 +10,6 @@ namespace SmartPantry
     {
         string name;
         Dictionary<FoodItem, int> Ingredients;
-        // Store recipes somewhere.
-
         
         public string Name
         {
@@ -19,12 +17,10 @@ namespace SmartPantry
             set { Name = value; }
         }
 
-
         public Dictionary<FoodItem, int> ingredients
         {
             get { return Ingredients; }
             set { Ingredients = value; }
         }
-
     }
 }

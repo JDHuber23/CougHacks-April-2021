@@ -14,6 +14,36 @@ namespace SmartPantry
 
         int totalServings;
 
+        public FoodItem(string name, string location, DateTime expDate, int servings)
+        {
+            this.name = name;
+            this.location = location;
+            this.expirationDate = expDate;
+            this.totalServings = servings;
+        }
 
+        public string Name
+        {
+            get { return this.name; }
+            set { name = value; }
+        }
+
+        public string Location
+        {
+            get { return this.location; }
+            set { this.location = value; }
+        }
+
+        public DateTime ExpirationDate
+        {
+            get { return this.expirationDate; }
+            set { this.expirationDate = value; }
+        }
+
+        public int TotalServings
+        {
+            get { return this.totalServings; }
+            set { this.totalServings = value; }
+        }
     }
 }
