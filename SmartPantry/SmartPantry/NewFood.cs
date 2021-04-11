@@ -13,8 +13,6 @@ namespace SmartPantry
     public partial class NewFood : Form
     {
         User user;
-        private string item;
-        private int v;
 
         public NewFood(User user)
         {

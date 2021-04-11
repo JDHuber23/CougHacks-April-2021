@@ -36,5 +36,10 @@ namespace SmartPantry
             get { return instructions; }
             set { instructions = value; }
         }
+
+        public override string ToString()
+        {
+            return name;
+        }
     }
 }

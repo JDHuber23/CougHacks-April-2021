@@ -14,6 +14,7 @@ namespace SmartPantry
     {
         private User user;
         private FoodForm currentFoodForm = new FoodForm(null, null);
+        private RecipeForm currentRecipeForm = new RecipeForm(null, null);
         public Form1(User user)
         {
             InitializeComponent();
@@ -102,7 +103,10 @@ namespace SmartPantry
         private void recipesLB_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Clicked on an item in the list.
-            
+            currentRecipeForm.Close();
+            RecipeForm recipeForm = new RecipeForm(user, (Recipe)recipesLB.SelectedItem);
+            currentRecipeForm = recipeForm;
+            recipeForm.Show();
         }
 
         private void tabControl_Selected(object sender, TabControlEventArgs e)
@@ -163,9 +167,9 @@ namespace SmartPantry
                 // Recipes tab 
 
                 recipesLB.Items.Clear();
-                foreach (var recipe in user.Recipes)
+                foreach (Recipe recipe in user.Recipes)
                 {
-                    recipesLB.Items.Add(recipe.Name);
+                    recipesLB.Items.Add(recipe);
                 }
             }
         }
