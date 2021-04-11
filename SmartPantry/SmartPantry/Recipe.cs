@@ -9,18 +9,26 @@ namespace SmartPantry
     class Recipe
     {
         string name;
-        Dictionary<FoodItem, int> Ingredients;
+        Dictionary<FoodItem, int> ingredients;
+        string instructions;
+
+        public Recipe(string name, Dictionary<FoodItem, int> ingredients, string instructions)
+        {
+            this.name = name;
+            this.ingredients = ingredients;
+            this.instructions = instructions;
+        }
         
         public string Name
         {
-            get { return Name; }
-            set { Name = value; }
+            get { return name; }
+            set { name = value; }
         }
 
-        public Dictionary<FoodItem, int> ingredients
+        public Dictionary<FoodItem, int> Ingredients
         {
-            get { return Ingredients; }
-            set { Ingredients = value; }
+            get { return ingredients; }
+            set { ingredients = value; }
         }
     }
 }
