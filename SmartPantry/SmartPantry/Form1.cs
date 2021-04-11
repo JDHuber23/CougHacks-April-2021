@@ -27,6 +27,10 @@ namespace SmartPantry
              * from the master food list. Ex: PB&J
              */
 
+            CookedForm cookedForm = new CookedForm(); // Initialize new form
+            cookedForm.Show(); // Show the new form
+            //this.Hide(); // Hide the current form
+
         }
 
         private void ateButton_Click(object sender, EventArgs e)
@@ -35,6 +39,9 @@ namespace SmartPantry
              * Basically, if you eat something individually (i.e. snacking) you go here
              * to deduct the amount. Ex: two servings of potato chips.
              */
+
+            AteForm ateForm = new AteForm();
+            ateForm.Show();
         }
 
         private void shoppingButton_Click(object sender, EventArgs e)
