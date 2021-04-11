@@ -184,6 +184,12 @@ namespace SmartPantry
             NewRecipeForm newRecipe = new NewRecipeForm(user);
             newRecipe.Show();
         }
+
+        private void addFoodItemButton_Click(object sender, EventArgs e)
+        {
+            NewFood newFood = new NewFood(user);
+            newFood.Show();
+        }
     }
 }
 
