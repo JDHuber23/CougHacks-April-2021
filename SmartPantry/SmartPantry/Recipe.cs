@@ -30,5 +30,11 @@ namespace SmartPantry
             get { return ingredients; }
             set { ingredients = value; }
         }
+
+        public string Instructions
+        {
+            get { return instructions; }
+            set { instructions = value; }
+        }
     }
 }

@@ -8,16 +8,24 @@ namespace SmartPantry
 {
     public class User
     {
+        private string username;
         private ShoppingList shoppingList;
         private List<FoodItem> mykitchen;
         private List<Recipe> recipes;
         public User ()
         {
+            this.username = username;
             shoppingList = new ShoppingList();
             mykitchen = new List<FoodItem>();
             recipes = new List<Recipe>();
         }
         
+        public string Username
+        {
+            get { return username; }
+            set { username = value; }
+        }
+
         public ShoppingList UserShoppingList
         {
             get { return shoppingList; }
