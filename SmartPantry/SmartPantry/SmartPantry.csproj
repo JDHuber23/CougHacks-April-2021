@@ -92,12 +92,11 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
+
     <EmbeddedResource Include="NewRecipeForm.resx">
       <DependentUpon>NewRecipeForm.cs</DependentUpon>
     </EmbeddedResource>
-=======
->>>>>>> classesBranch
+
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
