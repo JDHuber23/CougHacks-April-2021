@@ -87,7 +87,7 @@ namespace SmartPantry
             string successTitle = "Success!";
             string failedMessage = "Save not completed.";
             string failedTitle = "Error";
-            /*
+            /* Pseudocode below:
              * if(save successful)
              *      MessageBox.Show(successMessage, successTitle);
              * else

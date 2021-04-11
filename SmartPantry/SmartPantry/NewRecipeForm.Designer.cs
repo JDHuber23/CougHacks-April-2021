@@ -56,7 +56,7 @@ namespace SmartPantry
             this.newRecipeDescriptionTB.Multiline = true;
             this.newRecipeDescriptionTB.Name = "newRecipeDescriptionTB";
             this.newRecipeDescriptionTB.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.newRecipeDescriptionTB.Size = new System.Drawing.Size(399, 120);
+            this.newRecipeDescriptionTB.Size = new System.Drawing.Size(265, 120);
             this.newRecipeDescriptionTB.TabIndex = 0;
             // 
             // label1
@@ -70,7 +70,7 @@ namespace SmartPantry
             // 
             // recipeNameTB
             // 
-            this.recipeNameTB.Location = new System.Drawing.Point(153, 34);
+            this.recipeNameTB.Location = new System.Drawing.Point(30, 36);
             this.recipeNameTB.Name = "recipeNameTB";
             this.recipeNameTB.Size = new System.Drawing.Size(249, 20);
             this.recipeNameTB.TabIndex = 2;
@@ -79,7 +79,7 @@ namespace SmartPantry
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 37);
+            this.label2.Location = new System.Drawing.Point(27, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 13);
             this.label2.TabIndex = 3;
@@ -201,9 +201,9 @@ namespace SmartPantry
             // 
             // saveRecipeButton
             // 
-            this.saveRecipeButton.Location = new System.Drawing.Point(319, 307);
+            this.saveRecipeButton.Location = new System.Drawing.Point(30, 414);
             this.saveRecipeButton.Name = "saveRecipeButton";
-            this.saveRecipeButton.Size = new System.Drawing.Size(109, 74);
+            this.saveRecipeButton.Size = new System.Drawing.Size(265, 45);
             this.saveRecipeButton.TabIndex = 18;
             this.saveRecipeButton.Text = "Save Recipe!";
             this.saveRecipeButton.UseVisualStyleBackColor = true;
@@ -213,7 +213,7 @@ namespace SmartPantry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(451, 450);
+            this.ClientSize = new System.Drawing.Size(322, 506);
             this.Controls.Add(this.saveRecipeButton);
             this.Controls.Add(this.quantity6);
             this.Controls.Add(this.ingredient6);

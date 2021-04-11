@@ -55,7 +55,7 @@ namespace SmartPantry
             // 
             this.cookedButton.Location = new System.Drawing.Point(14, 24);
             this.cookedButton.Name = "cookedButton";
-            this.cookedButton.Size = new System.Drawing.Size(203, 207);
+            this.cookedButton.Size = new System.Drawing.Size(148, 51);
             this.cookedButton.TabIndex = 0;
             this.cookedButton.Text = "I Cooked Something!";
             this.cookedButton.UseVisualStyleBackColor = true;
@@ -63,9 +63,9 @@ namespace SmartPantry
             // 
             // ateButton
             // 
-            this.ateButton.Location = new System.Drawing.Point(14, 266);
+            this.ateButton.Location = new System.Drawing.Point(14, 81);
             this.ateButton.Name = "ateButton";
-            this.ateButton.Size = new System.Drawing.Size(202, 189);
+            this.ateButton.Size = new System.Drawing.Size(148, 52);
             this.ateButton.TabIndex = 5;
             this.ateButton.Text = "I Ate Something!";
             this.ateButton.UseVisualStyleBackColor = true;
@@ -73,9 +73,9 @@ namespace SmartPantry
             // 
             // shoppingButton
             // 
-            this.shoppingButton.Location = new System.Drawing.Point(679, 24);
+            this.shoppingButton.Location = new System.Drawing.Point(14, 139);
             this.shoppingButton.Name = "shoppingButton";
-            this.shoppingButton.Size = new System.Drawing.Size(156, 430);
+            this.shoppingButton.Size = new System.Drawing.Size(148, 52);
             this.shoppingButton.TabIndex = 7;
             this.shoppingButton.Text = "Shopping List";
             this.shoppingButton.UseVisualStyleBackColor = true;
@@ -88,7 +88,7 @@ namespace SmartPantry
             this.tabControl.Controls.Add(this.refrigeratorTab);
             this.tabControl.Controls.Add(this.freezerTab);
             this.tabControl.Controls.Add(this.recipesTab);
-            this.tabControl.Location = new System.Drawing.Point(255, 24);
+            this.tabControl.Location = new System.Drawing.Point(168, 24);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(367, 431);
@@ -120,7 +120,7 @@ namespace SmartPantry
             this.pantryTab.Location = new System.Drawing.Point(4, 22);
             this.pantryTab.Name = "pantryTab";
             this.pantryTab.Padding = new System.Windows.Forms.Padding(3);
-            this.pantryTab.Size = new System.Drawing.Size(360, 405);
+            this.pantryTab.Size = new System.Drawing.Size(252, 405);
             this.pantryTab.TabIndex = 1;
             this.pantryTab.Text = "Pantry";
             this.pantryTab.UseVisualStyleBackColor = true;
@@ -140,7 +140,7 @@ namespace SmartPantry
             this.refrigeratorTab.Location = new System.Drawing.Point(4, 22);
             this.refrigeratorTab.Name = "refrigeratorTab";
             this.refrigeratorTab.Padding = new System.Windows.Forms.Padding(3);
-            this.refrigeratorTab.Size = new System.Drawing.Size(360, 405);
+            this.refrigeratorTab.Size = new System.Drawing.Size(252, 405);
             this.refrigeratorTab.TabIndex = 2;
             this.refrigeratorTab.Text = "Refrigerator";
             this.refrigeratorTab.UseVisualStyleBackColor = true;
@@ -160,7 +160,7 @@ namespace SmartPantry
             this.freezerTab.Location = new System.Drawing.Point(4, 22);
             this.freezerTab.Name = "freezerTab";
             this.freezerTab.Padding = new System.Windows.Forms.Padding(3);
-            this.freezerTab.Size = new System.Drawing.Size(360, 405);
+            this.freezerTab.Size = new System.Drawing.Size(252, 405);
             this.freezerTab.TabIndex = 3;
             this.freezerTab.Text = "Freezer";
             this.freezerTab.UseVisualStyleBackColor = true;
@@ -180,7 +180,7 @@ namespace SmartPantry
             this.recipesTab.Location = new System.Drawing.Point(4, 22);
             this.recipesTab.Name = "recipesTab";
             this.recipesTab.Padding = new System.Windows.Forms.Padding(3);
-            this.recipesTab.Size = new System.Drawing.Size(360, 405);
+            this.recipesTab.Size = new System.Drawing.Size(252, 405);
             this.recipesTab.TabIndex = 4;
             this.recipesTab.Text = "Recipes";
             this.recipesTab.UseVisualStyleBackColor = true;

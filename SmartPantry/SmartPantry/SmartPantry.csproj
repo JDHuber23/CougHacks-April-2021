@@ -89,6 +89,9 @@
     <EmbeddedResource Include="CookedForm.resx">
       <DependentUpon>CookedForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NewRecipeForm.resx">
       <DependentUpon>NewRecipeForm.cs</DependentUpon>
     </EmbeddedResource>
