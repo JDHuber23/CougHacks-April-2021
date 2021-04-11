@@ -42,11 +42,12 @@ namespace SmartPantry
                 file.WriteLine("RECIPES");
                 foreach (Recipe recipe in user.Recipes)
                 {
-                    file.Write("-" + recipe.Name + "|" + recipe.Instructions + "|");
+                    file.Write("-" + recipe.Name + "|" + recipe.Instructions);
                     foreach (string item in recipe.Ingredients.Keys)
                     {
-                        file.Write(item + "|" + recipe.Ingredients[item]);
+                        file.Write("|" + item + "|" + recipe.Ingredients[item]);
                     }
+
                     file.WriteLine();
                 }
             }
@@ -102,6 +103,7 @@ namespace SmartPantry
                 }
                 
             }
+            this.user = user;
             return user;
         }
     }
