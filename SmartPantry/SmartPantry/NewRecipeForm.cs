@@ -61,9 +61,5 @@ namespace SmartPantry
             quantity1.Clear();
         }
 
-        private void addRecipeItemButton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
