@@ -41,13 +41,13 @@ namespace SmartPantry
             {
                 recipe.Name = nameTextBox.Text;
                 recipe.Instructions = directionsText.Text;
-                Dictionary<string, int> items = new Dictionary<string, int>();
+                /*Dictionary<string, int> items = new Dictionary<string, int>();
                 foreach (string item in ingredientsLB.Items)
                 {
                     string[] itemArray = item.Split(' ');
                     items.Add(itemArray[0], int.Parse(itemArray[1]));
                 }
-                recipe.Ingredients = items;
+                recipe.Ingredients = items;*/
                 this.Close();
             }
         }
