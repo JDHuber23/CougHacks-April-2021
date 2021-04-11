@@ -20,6 +20,9 @@ namespace SmartPantry
         private void cookedNewRecipeButton_Click(object sender, EventArgs e)
         {
             // Functionality when "New Recipe" button clicked.
+            
+            NewRecipeForm newRecipeForm = new NewRecipeForm();
+            newRecipeForm.Show();
         }
 
         private void recipeSearchTB_TextChanged(object sender, EventArgs e)
