@@ -18,11 +18,10 @@ namespace SmartPantry
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            FlatStorage storage = new FlatStorage(null);
             User user;
             try
             {
-                user = storage.ReadFromFile("dummy");
+                user = FlatStorage.ReadFromFile("dummy");
             }
             catch (FileNotFoundException e)
             {
@@ -53,7 +52,7 @@ namespace SmartPantry
             }
             Application.Run(new Form1(user));
             
-            storage.SaveToFile();
+            FlatStorage.SaveToFile(user);
         }
     }
 }

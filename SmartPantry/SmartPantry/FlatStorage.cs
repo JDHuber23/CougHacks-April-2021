@@ -7,24 +7,9 @@ using System;
 
 namespace SmartPantry
 {
-    public class FlatStorage
+    public static class FlatStorage
     {
-        // recipes
-
-        // food items
-
-        // shopping list
-
-        // user
-
-        private User user;
-
-        public FlatStorage(User user)
-        {
-            this.user = user;
-        }
-
-        public void SaveToFile()
+        public static void SaveToFile(User user)
         {
             using (StreamWriter file = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + @"\\" + user.Username + ".txt"))
             {
@@ -53,7 +38,7 @@ namespace SmartPantry
             }
         }
 
-        public User ReadFromFile(string username)
+        public static User ReadFromFile(string username)
         {
             User user = new User(username);
             using (StreamReader file = new StreamReader(Path.GetFullPath(Directory.GetCurrentDirectory()) + "\\" + username + ".txt"))
@@ -103,7 +88,6 @@ namespace SmartPantry
                 }
                 
             }
-            this.user = user;
             return user;
         }
     }
