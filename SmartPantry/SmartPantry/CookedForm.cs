@@ -16,5 +16,10 @@ namespace SmartPantry
         {
             InitializeComponent();
         }
+
+        private void cookedNewRecipeButton_Click(object sender, EventArgs e)
+        {
+            // Functionality when "New Recipe" button clicked.
+        }
     }
 }

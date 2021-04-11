@@ -16,5 +16,10 @@ namespace SmartPantry
         {
             InitializeComponent();
         }
+
+        private void ateNewFoodButton_Click(object sender, EventArgs e)
+        {
+            // Functionality when "New Food" button clicked.
+        }
     }
 }

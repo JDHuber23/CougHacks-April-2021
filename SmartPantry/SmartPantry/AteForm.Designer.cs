@@ -59,6 +59,7 @@ namespace SmartPantry
             this.ateNewFoodButton.TabIndex = 3;
             this.ateNewFoodButton.Text = "New Food";
             this.ateNewFoodButton.UseVisualStyleBackColor = true;
+            this.ateNewFoodButton.Click += new System.EventHandler(this.ateNewFoodButton_Click);
             // 
             // AteForm
             // 

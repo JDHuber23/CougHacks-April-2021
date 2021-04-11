@@ -61,6 +61,7 @@ namespace SmartPantry
             this.cookedNewRecipeButton.TabIndex = 2;
             this.cookedNewRecipeButton.Text = "New Recipe";
             this.cookedNewRecipeButton.UseVisualStyleBackColor = true;
+            this.cookedNewRecipeButton.Click += new System.EventHandler(this.cookedNewRecipeButton_Click);
             // 
             // CookedForm
             // 

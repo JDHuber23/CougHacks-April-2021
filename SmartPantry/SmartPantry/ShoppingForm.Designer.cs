@@ -59,6 +59,7 @@ namespace SmartPantry
             this.newShoppingItemButton.TabIndex = 2;
             this.newShoppingItemButton.Text = "New Shopping Item";
             this.newShoppingItemButton.UseVisualStyleBackColor = true;
+            this.newShoppingItemButton.Click += new System.EventHandler(this.newShoppingItemButton_Click);
             // 
             // ShoppingForm
             // 
