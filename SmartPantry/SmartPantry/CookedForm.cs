@@ -27,7 +27,7 @@ namespace SmartPantry
         {
             // Functionality when "New Recipe" button clicked.
             
-            NewRecipeForm newRecipeForm = new NewRecipeForm(user);
+            NewRecipeForm newRecipeForm = new NewRecipeForm(user, true);
             newRecipeForm.Show();
             this.Close();
         }

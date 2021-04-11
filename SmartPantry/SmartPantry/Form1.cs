@@ -174,6 +174,12 @@ namespace SmartPantry
         {
             tabControl_Selected(sender, new TabControlEventArgs(tabControl.SelectedTab, tabControl.SelectedIndex, TabControlAction.Selected));
         }
+
+        private void addRecipe_Click(object sender, EventArgs e)
+        {
+            NewRecipeForm newRecipe = new NewRecipeForm(user);
+            newRecipe.Show();
+        }
     }
 }
 

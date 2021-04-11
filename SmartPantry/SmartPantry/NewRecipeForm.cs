@@ -16,10 +16,17 @@ namespace SmartPantry
         string instructions;
         Dictionary<string, int> ingredients = new Dictionary<string, int>();
         User user;
+        bool cooked;
         public NewRecipeForm(User user)
         {
             InitializeComponent();
             this.user = user;
+            cooked = false;
+        }
+
+        public NewRecipeForm(User user, bool cooked) : this(user)
+        {
+            this.cooked = cooked;
         }
 
         private void saveRecipeButton_Click(object sender, EventArgs e)
@@ -43,8 +50,11 @@ namespace SmartPantry
                 recipeNameTB.Clear();
                 MessageBox.Show(successMessage, successTitle);
 
-                CookedForm newForm = new CookedForm(user);
-                newForm.Show();
+                if (cooked)
+                {
+                    CookedForm newForm = new CookedForm(user);
+                    newForm.Show();
+                }
             }
             else
             {
