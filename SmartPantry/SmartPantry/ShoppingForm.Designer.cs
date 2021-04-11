@@ -70,7 +70,7 @@ namespace SmartPantry
             this.Controls.Add(this.label1);
             this.Controls.Add(this.shoppingList);
             this.Name = "ShoppingForm";
-            this.Text = "ShoppingForm";
+            this.Text = "Shopping List";
             this.ResumeLayout(false);
             this.PerformLayout();
 

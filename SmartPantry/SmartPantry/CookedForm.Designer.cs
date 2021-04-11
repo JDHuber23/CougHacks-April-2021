@@ -72,7 +72,7 @@ namespace SmartPantry
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cookedRecipeList);
             this.Name = "CookedForm";
-            this.Text = "CookedForm";
+            this.Text = "Cooked Recipe";
             this.ResumeLayout(false);
             this.PerformLayout();
 
