@@ -44,5 +44,10 @@ namespace SmartPantry
             get { return this.totalServings; }
             set { this.totalServings = value; }
         }
+
+        public override string ToString()
+        {
+            return name + " " + totalServings;
+        }
     }
 }

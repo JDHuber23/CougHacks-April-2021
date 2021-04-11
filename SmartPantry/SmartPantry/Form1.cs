@@ -12,7 +12,8 @@ namespace SmartPantry
 {
     public partial class Form1 : Form
     {
-        User user;
+        private User user;
+        private FoodForm currentFoodForm = new FoodForm(null, null);
         public Form1(User user)
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace SmartPantry
             // initialize the All foods tab here (since its the initial default tab)
             foreach(var food in user.MyKitchen)
             {
-                allFoodLB.Items.Add(food.Name);
+                allFoodLB.Items.Add(food);
             }
         }
 
@@ -65,26 +66,43 @@ namespace SmartPantry
         private void allFoodLB_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Clicked on an item in the list.
+            currentFoodForm.Close();
+            FoodForm foodForm = new FoodForm((FoodItem)allFoodLB.SelectedItem, user);
+            currentFoodForm = foodForm;
+            foodForm.Show();
         }
 
         private void pantryLB_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Clicked on an item in the list.
+            currentFoodForm.Close();
+            FoodForm foodForm = new FoodForm((FoodItem)pantryLB.SelectedItem, user);
+            currentFoodForm = foodForm;
+            foodForm.Show();
         }
 
         private void refrigeratorLB_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Clicked on an item in the list.
+            currentFoodForm.Close();
+            FoodForm foodForm = new FoodForm((FoodItem)refrigeratorLB.SelectedItem, user);
+            currentFoodForm = foodForm;
+            foodForm.Show();
         }
 
         private void freezerLB_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Clicked on an item in the list.
+            currentFoodForm.Close();
+            FoodForm foodForm = new FoodForm((FoodItem)freezerLB.SelectedItem, user);
+            currentFoodForm = foodForm;
+            foodForm.Show();
         }
 
         private void recipesLB_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Clicked on an item in the list.
+            
         }
 
         private void tabControl_Selected(object sender, TabControlEventArgs e)
@@ -96,7 +114,7 @@ namespace SmartPantry
                 allFoodLB.Items.Clear();        
                 foreach (var food in user.MyKitchen)
                 {
-                    allFoodLB.Items.Add(food.Name);
+                    allFoodLB.Items.Add(food);
                 }
             }
 
@@ -109,7 +127,7 @@ namespace SmartPantry
                 {
                     if(food.Location == "Pantry")
                     {
-                        pantryLB.Items.Add(food.Name);
+                        pantryLB.Items.Add(food);
                     }
                 }
             }
@@ -122,7 +140,7 @@ namespace SmartPantry
                 {
                     if (food.Location == "Refrigerator")
                     {
-                        refrigeratorLB.Items.Add(food.Name);
+                        refrigeratorLB.Items.Add(food);
                     }
                 }
             }
@@ -135,7 +153,7 @@ namespace SmartPantry
                 {
                     if (food.Location == "Freezer")
                     {
-                        freezerLB.Items.Add(food.Name);
+                        freezerLB.Items.Add(food);
                     }
                 }
             }

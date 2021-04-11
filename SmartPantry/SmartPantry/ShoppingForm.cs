@@ -17,6 +17,15 @@ namespace SmartPantry
         {
             this.user = user;
             InitializeComponent();
+            populate();
+        }
+
+        private void populate()
+        {
+            foreach (string item in user.UserShoppingList.Items.Keys)
+            {
+                shoppingList.Items.Add(item + " " + user.UserShoppingList.Items[item]);
+            }
         }
 
         private void newShoppingItemButton_Click(object sender, EventArgs e)
