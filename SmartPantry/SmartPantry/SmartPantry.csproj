@@ -47,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StorageTester.cs" />
+    <Compile Include="FlatStorage.cs" />
     <Compile Include="FoodItem.cs" />
     <Compile Include="AteForm.cs">
       <SubType>Form</SubType>

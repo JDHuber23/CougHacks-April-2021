@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmartPantry
 {
-    class Recipe
+    public class Recipe
     {
         string name;
         Dictionary<FoodItem, int> ingredients;
@@ -29,6 +29,12 @@ namespace SmartPantry
         {
             get { return ingredients; }
             set { ingredients = value; }
+        }
+
+        public string Instructions
+        {
+            get { return instructions; }
+            set { instructions = value; }
         }
     }
 }

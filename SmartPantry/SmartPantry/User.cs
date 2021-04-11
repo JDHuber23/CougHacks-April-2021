@@ -6,18 +6,26 @@ using System.Threading.Tasks;
 
 namespace SmartPantry
 {
-    class User
+    public class User
     {
+        private string username;
         private ShoppingList shoppingList;
         List<FoodItem> mykitchen;
         List<Recipe> recipes;
-        public User ()
+        public User(string username)
         {
+            this.username = username;
             shoppingList = new ShoppingList();
             mykitchen = new List<FoodItem>();
             recipes = new List<Recipe>();
         }
         
+        public string Username
+        {
+            get { return username; }
+            set { username = value; }
+        }
+
         public ShoppingList UserShoppingList
         {
             get { return shoppingList; }

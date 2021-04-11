@@ -16,6 +16,7 @@ namespace SmartPantry
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            StorageTester.test();
             Application.Run(new Form1());
         }
     }
