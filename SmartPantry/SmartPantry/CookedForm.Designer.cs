@@ -32,8 +32,6 @@ namespace SmartPantry
             this.cookedRecipeList = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cookedNewRecipeButton = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.recipeSearchTB = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SelectRecipe = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -43,9 +41,9 @@ namespace SmartPantry
             this.cookedRecipeList.BackColor = System.Drawing.SystemColors.Window;
             this.cookedRecipeList.ForeColor = System.Drawing.SystemColors.WindowText;
             this.cookedRecipeList.FormattingEnabled = true;
-            this.cookedRecipeList.Location = new System.Drawing.Point(24, 89);
+            this.cookedRecipeList.Location = new System.Drawing.Point(24, 76);
             this.cookedRecipeList.Name = "cookedRecipeList";
-            this.cookedRecipeList.Size = new System.Drawing.Size(253, 316);
+            this.cookedRecipeList.Size = new System.Drawing.Size(253, 329);
             this.cookedRecipeList.TabIndex = 0;
             // 
             // label1
@@ -71,24 +69,6 @@ namespace SmartPantry
             this.cookedNewRecipeButton.UseVisualStyleBackColor = false;
             this.cookedNewRecipeButton.Click += new System.EventHandler(this.cookedNewRecipeButton_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.Window;
-            this.label2.Location = new System.Drawing.Point(136, 69);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Search:";
-            // 
-            // recipeSearchTB
-            // 
-            this.recipeSearchTB.Location = new System.Drawing.Point(177, 66);
-            this.recipeSearchTB.Name = "recipeSearchTB";
-            this.recipeSearchTB.Size = new System.Drawing.Size(100, 20);
-            this.recipeSearchTB.TabIndex = 4;
-            this.recipeSearchTB.TextChanged += new System.EventHandler(this.recipeSearchTB_TextChanged);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -104,7 +84,7 @@ namespace SmartPantry
             // 
             this.SelectRecipe.BackColor = System.Drawing.Color.Silver;
             this.SelectRecipe.Location = new System.Drawing.Point(25, 409);
-            this.SelectRecipe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SelectRecipe.Margin = new System.Windows.Forms.Padding(2);
             this.SelectRecipe.Name = "SelectRecipe";
             this.SelectRecipe.Size = new System.Drawing.Size(112, 40);
             this.SelectRecipe.TabIndex = 6;
@@ -120,8 +100,6 @@ namespace SmartPantry
             this.ClientSize = new System.Drawing.Size(302, 470);
             this.Controls.Add(this.SelectRecipe);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.recipeSearchTB);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.cookedNewRecipeButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cookedRecipeList);
@@ -137,8 +115,6 @@ namespace SmartPantry
         private System.Windows.Forms.ListBox cookedRecipeList;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button cookedNewRecipeButton;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox recipeSearchTB;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button SelectRecipe;
     }
