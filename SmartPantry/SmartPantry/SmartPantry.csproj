@@ -47,7 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StorageTester.cs" />
     <Compile Include="FlatStorage.cs" />
     <Compile Include="FoodItem.cs" />
     <Compile Include="AteForm.cs">
@@ -106,7 +105,6 @@
     <EmbeddedResource Include="NewRecipeForm.resx">
       <DependentUpon>NewRecipeForm.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

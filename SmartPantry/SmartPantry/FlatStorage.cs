@@ -11,7 +11,7 @@ namespace SmartPantry
     {
         public static void SaveToFile(User user)
         {
-            using (StreamWriter file = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + @"\\" + user.Username + ".txt"))
+            using (StreamWriter file = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + @"\\" + user.Username + ".txt", false))
             {
                 file.WriteLine("FOODITEMS");
                 foreach (FoodItem item in user.MyKitchen)
