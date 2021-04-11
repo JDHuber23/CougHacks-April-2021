@@ -118,8 +118,8 @@ namespace SmartPantry
             // 
             // saveRecipeButton
             // 
-            this.saveRecipeButton.BackColor = System.Drawing.Color.Gray;
-            this.saveRecipeButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.saveRecipeButton.BackColor = System.Drawing.Color.Silver;
+            this.saveRecipeButton.ForeColor = System.Drawing.SystemColors.WindowText;
             this.saveRecipeButton.Location = new System.Drawing.Point(30, 422);
             this.saveRecipeButton.Name = "saveRecipeButton";
             this.saveRecipeButton.Size = new System.Drawing.Size(265, 45);
@@ -130,19 +130,21 @@ namespace SmartPantry
             // 
             // addRecipeItemButton
             // 
-            this.addRecipeItemButton.BackColor = System.Drawing.Color.Gray;
-            this.addRecipeItemButton.ForeColor = System.Drawing.SystemColors.Window;
+            this.addRecipeItemButton.BackColor = System.Drawing.Color.Silver;
+            this.addRecipeItemButton.ForeColor = System.Drawing.SystemColors.WindowText;
             this.addRecipeItemButton.Location = new System.Drawing.Point(225, 254);
             this.addRecipeItemButton.Name = "addRecipeItemButton";
             this.addRecipeItemButton.Size = new System.Drawing.Size(75, 23);
             this.addRecipeItemButton.TabIndex = 19;
             this.addRecipeItemButton.Text = "Add Item";
             this.addRecipeItemButton.UseVisualStyleBackColor = false;
+            this.addRecipeItemButton.Click += new System.EventHandler(this.addRecipeItemButton_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Rage Italic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label5.Location = new System.Drawing.Point(24, -1);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(199, 34);

@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace SmartPantry
 {
-    public partial class ShoppingForm : Form
+    public partial class NewFood : Form
     {
-        public ShoppingForm()
+        public NewFood()
         {
             InitializeComponent();
         }
 
-        private void newShoppingItemButton_Click(object sender, EventArgs e)
+        private void addNewFoodButton_Click(object sender, EventArgs e)
         {
-            // Functionality when "New Shopping Item" button pushed.
-            NewFood newFood = new NewFood();
-            newFood.Show();
+            // Functionality for clicking "Add Item" button.
         }
     }
 }

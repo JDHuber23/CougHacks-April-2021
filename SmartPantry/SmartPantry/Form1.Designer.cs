@@ -102,20 +102,20 @@ namespace SmartPantry
             // 
             // allFoodTab
             // 
-            this.allFoodTab.BackColor = System.Drawing.Color.DimGray;
+            this.allFoodTab.BackColor = System.Drawing.SystemColors.Window;
             this.allFoodTab.Controls.Add(this.allFoodLB);
             this.allFoodTab.Location = new System.Drawing.Point(4, 22);
             this.allFoodTab.Name = "allFoodTab";
             this.allFoodTab.Padding = new System.Windows.Forms.Padding(2);
-            this.allFoodTab.Size = new System.Drawing.Size(254, 385);
+            this.allFoodTab.Size = new System.Drawing.Size(254, 345);
             this.allFoodTab.TabIndex = 0;
             this.allFoodTab.Text = "All Food";
             // 
             // allFoodLB
             // 
-            this.allFoodLB.BackColor = System.Drawing.SystemColors.GrayText;
+            this.allFoodLB.BackColor = System.Drawing.SystemColors.Window;
             this.allFoodLB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.allFoodLB.ForeColor = System.Drawing.SystemColors.Window;
+            this.allFoodLB.ForeColor = System.Drawing.SystemColors.WindowText;
             this.allFoodLB.FormattingEnabled = true;
             this.allFoodLB.Location = new System.Drawing.Point(3, 2);
             this.allFoodLB.Name = "allFoodLB";
@@ -125,20 +125,20 @@ namespace SmartPantry
             // 
             // pantryTab
             // 
-            this.pantryTab.BackColor = System.Drawing.Color.DimGray;
+            this.pantryTab.BackColor = System.Drawing.SystemColors.Window;
             this.pantryTab.Controls.Add(this.pantryLB);
             this.pantryTab.Location = new System.Drawing.Point(4, 22);
             this.pantryTab.Name = "pantryTab";
             this.pantryTab.Padding = new System.Windows.Forms.Padding(2);
-            this.pantryTab.Size = new System.Drawing.Size(254, 385);
+            this.pantryTab.Size = new System.Drawing.Size(254, 345);
             this.pantryTab.TabIndex = 1;
             this.pantryTab.Text = "Pantry";
             // 
             // pantryLB
             // 
-            this.pantryLB.BackColor = System.Drawing.SystemColors.GrayText;
+            this.pantryLB.BackColor = System.Drawing.SystemColors.Window;
             this.pantryLB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.pantryLB.ForeColor = System.Drawing.SystemColors.Window;
+            this.pantryLB.ForeColor = System.Drawing.SystemColors.WindowText;
             this.pantryLB.FormattingEnabled = true;
             this.pantryLB.Location = new System.Drawing.Point(5, 5);
             this.pantryLB.Name = "pantryLB";
@@ -148,20 +148,20 @@ namespace SmartPantry
             // 
             // refrigeratorTab
             // 
-            this.refrigeratorTab.BackColor = System.Drawing.Color.DimGray;
+            this.refrigeratorTab.BackColor = System.Drawing.SystemColors.Window;
             this.refrigeratorTab.Controls.Add(this.refrigeratorLB);
             this.refrigeratorTab.Location = new System.Drawing.Point(4, 22);
             this.refrigeratorTab.Name = "refrigeratorTab";
             this.refrigeratorTab.Padding = new System.Windows.Forms.Padding(2);
-            this.refrigeratorTab.Size = new System.Drawing.Size(254, 385);
+            this.refrigeratorTab.Size = new System.Drawing.Size(254, 345);
             this.refrigeratorTab.TabIndex = 2;
             this.refrigeratorTab.Text = "Refrigerator";
             // 
             // refrigeratorLB
             // 
-            this.refrigeratorLB.BackColor = System.Drawing.SystemColors.GrayText;
+            this.refrigeratorLB.BackColor = System.Drawing.SystemColors.Window;
             this.refrigeratorLB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.refrigeratorLB.ForeColor = System.Drawing.SystemColors.Window;
+            this.refrigeratorLB.ForeColor = System.Drawing.SystemColors.WindowText;
             this.refrigeratorLB.FormattingEnabled = true;
             this.refrigeratorLB.Location = new System.Drawing.Point(5, 5);
             this.refrigeratorLB.Name = "refrigeratorLB";
@@ -171,20 +171,20 @@ namespace SmartPantry
             // 
             // freezerTab
             // 
-            this.freezerTab.BackColor = System.Drawing.Color.DimGray;
+            this.freezerTab.BackColor = System.Drawing.SystemColors.Window;
             this.freezerTab.Controls.Add(this.freezerLB);
             this.freezerTab.Location = new System.Drawing.Point(4, 22);
             this.freezerTab.Name = "freezerTab";
             this.freezerTab.Padding = new System.Windows.Forms.Padding(2);
-            this.freezerTab.Size = new System.Drawing.Size(254, 385);
+            this.freezerTab.Size = new System.Drawing.Size(254, 345);
             this.freezerTab.TabIndex = 3;
             this.freezerTab.Text = "Freezer";
             // 
             // freezerLB
             // 
-            this.freezerLB.BackColor = System.Drawing.SystemColors.GrayText;
+            this.freezerLB.BackColor = System.Drawing.SystemColors.Window;
             this.freezerLB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.freezerLB.ForeColor = System.Drawing.SystemColors.Window;
+            this.freezerLB.ForeColor = System.Drawing.SystemColors.WindowText;
             this.freezerLB.FormattingEnabled = true;
             this.freezerLB.Location = new System.Drawing.Point(5, 5);
             this.freezerLB.Name = "freezerLB";
@@ -194,7 +194,7 @@ namespace SmartPantry
             // 
             // recipesTab
             // 
-            this.recipesTab.BackColor = System.Drawing.Color.DimGray;
+            this.recipesTab.BackColor = System.Drawing.SystemColors.Window;
             this.recipesTab.Controls.Add(this.recipesLB);
             this.recipesTab.Location = new System.Drawing.Point(4, 22);
             this.recipesTab.Name = "recipesTab";
@@ -205,9 +205,9 @@ namespace SmartPantry
             // 
             // recipesLB
             // 
-            this.recipesLB.BackColor = System.Drawing.SystemColors.GrayText;
+            this.recipesLB.BackColor = System.Drawing.SystemColors.Window;
             this.recipesLB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.recipesLB.ForeColor = System.Drawing.SystemColors.Window;
+            this.recipesLB.ForeColor = System.Drawing.SystemColors.WindowText;
             this.recipesLB.FormattingEnabled = true;
             this.recipesLB.Location = new System.Drawing.Point(5, 5);
             this.recipesLB.Name = "recipesLB";

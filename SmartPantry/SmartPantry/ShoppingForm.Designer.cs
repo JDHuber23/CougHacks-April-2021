@@ -30,26 +30,17 @@ namespace SmartPantry
         private void InitializeComponent()
         {
             this.shoppingList = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.newShoppingItemButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // shoppingList
             // 
             this.shoppingList.FormattingEnabled = true;
-            this.shoppingList.Location = new System.Drawing.Point(30, 41);
+            this.shoppingList.Location = new System.Drawing.Point(30, 54);
             this.shoppingList.Name = "shoppingList";
-            this.shoppingList.Size = new System.Drawing.Size(268, 381);
+            this.shoppingList.Size = new System.Drawing.Size(268, 368);
             this.shoppingList.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Shopping List Items:";
             // 
             // newShoppingItemButton
             // 
@@ -61,16 +52,28 @@ namespace SmartPantry
             this.newShoppingItemButton.UseVisualStyleBackColor = true;
             this.newShoppingItemButton.Click += new System.EventHandler(this.newShoppingItemButton_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Rage Italic", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label2.Location = new System.Drawing.Point(24, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(197, 43);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Shopping List";
+            // 
             // ShoppingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(330, 479);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.newShoppingItemButton);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.shoppingList);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ShoppingForm";
-            this.Text = "Shopping List";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -79,7 +82,7 @@ namespace SmartPantry
         #endregion
 
         private System.Windows.Forms.ListBox shoppingList;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button newShoppingItemButton;
+        private System.Windows.Forms.Label label2;
     }
 }

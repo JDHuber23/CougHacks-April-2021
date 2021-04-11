@@ -20,6 +20,24 @@ namespace SmartPantry
         private void ateNewFoodButton_Click(object sender, EventArgs e)
         {
             // Functionality when "New Food" button clicked.
+            NewFood newFood = new NewFood();
+            newFood.Show();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
