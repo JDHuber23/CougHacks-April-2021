@@ -12,7 +12,7 @@ namespace SmartPantry
         private ShoppingList shoppingList;
         private List<FoodItem> mykitchen;
         private List<Recipe> recipes;
-        public User ()
+        public User (string username)
         {
             this.username = username;
             shoppingList = new ShoppingList();

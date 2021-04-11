@@ -18,7 +18,7 @@ namespace SmartPantry
             Application.SetCompatibleTextRenderingDefault(false);
 
 
-            User user = new User();
+            User user = new User("dummy");
 
             // fill user with info 
             FoodItem food1 = new FoodItem("Bread", "Pantry", new DateTime(2020, 07, 11), 2);
@@ -44,7 +44,11 @@ namespace SmartPantry
 
             user.addRecipe(recipe);
 
+            FlatStorage storage = new FlatStorage(user);
+
             Application.Run(new Form1(user));
+            
+            storage.SaveToFile();
         }
     }
 }
