@@ -56,6 +56,9 @@ namespace SmartPantry
         private void selectFood_Click(object sender, EventArgs e)
         {
             string selectedFood = ateList.GetItemText(ateList.SelectedItem);
+
+            if (selectedFood == "") return;
+
             int servings = (int)servingPicker.Value;
 
             foreach(var food in user.MyKitchen)

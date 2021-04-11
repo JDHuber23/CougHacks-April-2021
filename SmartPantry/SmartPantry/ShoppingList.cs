@@ -23,7 +23,14 @@ namespace SmartPantry
 
         public void Add(string food, int servings)
         {
-            items.Add(food, servings);
+            if (items.ContainsKey(food))
+            {
+                items[food] += servings;
+            }
+            else
+            {
+                items.Add(food, servings);
+            }
         }
 
         public void Remove(string food)

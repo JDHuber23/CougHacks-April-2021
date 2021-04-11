@@ -41,6 +41,7 @@ namespace SmartPantry
             this.addToShopping = new System.Windows.Forms.Button();
             this.amountToAdd = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
+            this.update = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.amountToAdd)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +61,6 @@ namespace SmartPantry
             // 
             this.nameTextBox.Location = new System.Drawing.Point(17, 68);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.ReadOnly = true;
             this.nameTextBox.Size = new System.Drawing.Size(185, 20);
             this.nameTextBox.TabIndex = 11;
             // 
@@ -78,7 +78,6 @@ namespace SmartPantry
             // 
             this.quantityTextBox.Location = new System.Drawing.Point(225, 68);
             this.quantityTextBox.Name = "quantityTextBox";
-            this.quantityTextBox.ReadOnly = true;
             this.quantityTextBox.Size = new System.Drawing.Size(43, 20);
             this.quantityTextBox.TabIndex = 13;
             // 
@@ -106,13 +105,11 @@ namespace SmartPantry
             // 
             this.locationTextBox.Location = new System.Drawing.Point(17, 116);
             this.locationTextBox.Name = "locationTextBox";
-            this.locationTextBox.ReadOnly = true;
             this.locationTextBox.Size = new System.Drawing.Size(185, 20);
             this.locationTextBox.TabIndex = 16;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Enabled = false;
             this.dateTimePicker1.Location = new System.Drawing.Point(17, 164);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
@@ -130,7 +127,7 @@ namespace SmartPantry
             // 
             // addToShopping
             // 
-            this.addToShopping.Location = new System.Drawing.Point(119, 221);
+            this.addToShopping.Location = new System.Drawing.Point(124, 265);
             this.addToShopping.Name = "addToShopping";
             this.addToShopping.Size = new System.Drawing.Size(126, 39);
             this.addToShopping.TabIndex = 19;
@@ -140,7 +137,7 @@ namespace SmartPantry
             // 
             // amountToAdd
             // 
-            this.amountToAdd.Location = new System.Drawing.Point(21, 232);
+            this.amountToAdd.Location = new System.Drawing.Point(21, 276);
             this.amountToAdd.Name = "amountToAdd";
             this.amountToAdd.Size = new System.Drawing.Size(58, 20);
             this.amountToAdd.TabIndex = 20;
@@ -149,18 +146,29 @@ namespace SmartPantry
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.Window;
-            this.label6.Location = new System.Drawing.Point(18, 216);
+            this.label6.Location = new System.Drawing.Point(18, 260);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(80, 13);
             this.label6.TabIndex = 21;
             this.label6.Text = "Amount to Add:";
+            // 
+            // update
+            // 
+            this.update.Location = new System.Drawing.Point(92, 208);
+            this.update.Name = "update";
+            this.update.Size = new System.Drawing.Size(98, 32);
+            this.update.TabIndex = 22;
+            this.update.Text = "Update Item";
+            this.update.UseVisualStyleBackColor = true;
+            this.update.Click += new System.EventHandler(this.update_Click);
             // 
             // FoodForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(285, 283);
+            this.ClientSize = new System.Drawing.Size(285, 344);
+            this.Controls.Add(this.update);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.amountToAdd);
             this.Controls.Add(this.addToShopping);
@@ -195,5 +203,6 @@ namespace SmartPantry
         private System.Windows.Forms.Button addToShopping;
         private System.Windows.Forms.NumericUpDown amountToAdd;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button update;
     }
 }

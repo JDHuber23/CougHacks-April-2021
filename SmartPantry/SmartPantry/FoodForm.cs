@@ -42,5 +42,17 @@ namespace SmartPantry
                 this.Close();
             }
         }
+
+        private void update_Click(object sender, EventArgs e)
+        {
+            if (nameTextBox.Text != "" && quantityTextBox.Text != "" && locationTextBox.Text != "")
+            {
+                foodItem.Name = nameTextBox.Text;
+                foodItem.TotalServings = int.Parse(quantityTextBox.Text);
+                foodItem.Location = locationTextBox.Text;
+                foodItem.ExpirationDate = dateTimePicker1.Value;
+                this.Close();
+            }
+        }
     }
 }

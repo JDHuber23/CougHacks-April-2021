@@ -46,6 +46,14 @@ namespace SmartPantry
 
         public void addFoodToKitchen(FoodItem food)
         {
+            foreach (FoodItem item in mykitchen)
+            {
+                if (item.Name.Equals(food.Name))
+                {
+                    item.TotalServings += food.TotalServings;
+                    return;
+                }
+            }
             this.mykitchen.Add(food);
         }
 
