@@ -31,55 +31,6 @@ namespace SmartPantry
 
         }
 
-        private void ingredient2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void quantity2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ingredient3_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void quantity3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ingredient4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void quantity4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ingredient5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void quantity5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ingredient6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void quantity6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void saveRecipeButton_Click(object sender, EventArgs e)
         {
