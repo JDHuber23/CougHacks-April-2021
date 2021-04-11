@@ -84,12 +84,13 @@ namespace SmartPantry
             // 
             // addNewFoodButton
             // 
+            this.addNewFoodButton.BackColor = System.Drawing.Color.Silver;
             this.addNewFoodButton.Location = new System.Drawing.Point(223, 79);
             this.addNewFoodButton.Name = "addNewFoodButton";
             this.addNewFoodButton.Size = new System.Drawing.Size(75, 23);
             this.addNewFoodButton.TabIndex = 5;
             this.addNewFoodButton.Text = "Add Item";
-            this.addNewFoodButton.UseVisualStyleBackColor = true;
+            this.addNewFoodButton.UseVisualStyleBackColor = false;
             this.addNewFoodButton.Click += new System.EventHandler(this.addNewFoodButton_Click);
             // 
             // NewFood
