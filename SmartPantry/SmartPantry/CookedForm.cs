@@ -21,5 +21,10 @@ namespace SmartPantry
         {
             // Functionality when "New Recipe" button clicked.
         }
+
+        private void recipeSearchTB_TextChanged(object sender, EventArgs e)
+        {
+            // Searching for recipe that they cooked.
+        }
     }
 }

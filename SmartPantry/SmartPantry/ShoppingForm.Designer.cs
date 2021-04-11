@@ -53,9 +53,9 @@ namespace SmartPantry
             // 
             // newShoppingItemButton
             // 
-            this.newShoppingItemButton.Location = new System.Drawing.Point(333, 149);
+            this.newShoppingItemButton.Location = new System.Drawing.Point(91, 428);
             this.newShoppingItemButton.Name = "newShoppingItemButton";
-            this.newShoppingItemButton.Size = new System.Drawing.Size(118, 77);
+            this.newShoppingItemButton.Size = new System.Drawing.Size(131, 42);
             this.newShoppingItemButton.TabIndex = 2;
             this.newShoppingItemButton.Text = "New Shopping Item";
             this.newShoppingItemButton.UseVisualStyleBackColor = true;
@@ -65,7 +65,7 @@ namespace SmartPantry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(462, 450);
+            this.ClientSize = new System.Drawing.Size(330, 479);
             this.Controls.Add(this.newShoppingItemButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.shoppingList);
