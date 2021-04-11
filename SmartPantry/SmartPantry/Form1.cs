@@ -169,6 +169,11 @@ namespace SmartPantry
                 }
             }
         }
+
+        private void isActive(object sender, EventArgs e)
+        {
+            tabControl_Selected(sender, new TabControlEventArgs(tabControl.SelectedTab, tabControl.SelectedIndex, TabControlAction.Selected));
+        }
     }
 }
 

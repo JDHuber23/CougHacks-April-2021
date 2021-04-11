@@ -244,6 +244,7 @@ namespace SmartPantry
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
+            this.Activated += new System.EventHandler(this.isActive);
             this.tabControl.ResumeLayout(false);
             this.allFoodTab.ResumeLayout(false);
             this.pantryTab.ResumeLayout(false);
