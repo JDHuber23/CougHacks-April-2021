@@ -22,7 +22,17 @@ namespace SmartPantry
 
         private void addNewFoodButton_Click(object sender, EventArgs e)
         {
-            // Functionality for clicking "Add Item" button.
+            if (nameTextBox.Text != "" && quantityTextBox.Text != "" && locationTextBox.Text != "") 
+            {
+                string name = nameTextBox.Text;
+                int quantity = int.Parse(quantityTextBox.Text);
+                string location = locationTextBox.Text;
+                user.addFoodToKitchen(new FoodItem(name, location, expirationPicker.Value, quantity));
+                this.Close();
+            }
+            
         }
+
+
     }
 }

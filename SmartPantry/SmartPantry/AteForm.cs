@@ -25,7 +25,7 @@ namespace SmartPantry
             // Functionality when "New Food" button clicked.
             NewFood newFood = new NewFood(user);
             newFood.Show();
-
+            this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
