@@ -49,6 +49,9 @@ namespace SmartPantry
             /* This section for what happens when the "Shopping List" button is clicked.
              * If you click here, lists all food items currently in your shopping list.
              */
+
+            ShoppingForm shoppingForm = new ShoppingForm();
+            shoppingForm.Show();
         }
 
         private void allFoodLB_SelectedIndexChanged(object sender, EventArgs e)

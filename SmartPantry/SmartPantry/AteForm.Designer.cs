@@ -32,14 +32,16 @@ namespace SmartPantry
             this.ateList = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ateNewFoodButton = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ateList
             // 
             this.ateList.FormattingEnabled = true;
-            this.ateList.Location = new System.Drawing.Point(33, 40);
+            this.ateList.Location = new System.Drawing.Point(33, 66);
             this.ateList.Name = "ateList";
-            this.ateList.Size = new System.Drawing.Size(253, 368);
+            this.ateList.Size = new System.Drawing.Size(253, 342);
             this.ateList.TabIndex = 1;
             // 
             // label1
@@ -53,19 +55,37 @@ namespace SmartPantry
             // 
             // ateNewFoodButton
             // 
-            this.ateNewFoodButton.Location = new System.Drawing.Point(332, 99);
+            this.ateNewFoodButton.Location = new System.Drawing.Point(71, 414);
             this.ateNewFoodButton.Name = "ateNewFoodButton";
-            this.ateNewFoodButton.Size = new System.Drawing.Size(151, 85);
+            this.ateNewFoodButton.Size = new System.Drawing.Size(154, 47);
             this.ateNewFoodButton.TabIndex = 3;
             this.ateNewFoodButton.Text = "New Food";
             this.ateNewFoodButton.UseVisualStyleBackColor = true;
             this.ateNewFoodButton.Click += new System.EventHandler(this.ateNewFoodButton_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(186, 40);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(136, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Search:";
+            // 
             // AteForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(539, 450);
+            this.ClientSize = new System.Drawing.Size(317, 472);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ateNewFoodButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ateList);
@@ -81,5 +101,7 @@ namespace SmartPantry
         private System.Windows.Forms.ListBox ateList;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button ateNewFoodButton;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
