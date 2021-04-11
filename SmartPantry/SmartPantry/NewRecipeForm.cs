@@ -12,13 +12,16 @@ namespace SmartPantry
 {
     public partial class NewRecipeForm : Form
     {
+        string name;
+        Recipe recipe;
+        int quantity;
         public NewRecipeForm()
         {
             InitializeComponent();
         }
         private void recipeNameTB_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
 
         private void ingredient1_TextChanged(object sender, EventArgs e)
