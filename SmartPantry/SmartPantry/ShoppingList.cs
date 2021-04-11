@@ -9,24 +9,24 @@ namespace SmartPantry
     public class ShoppingList
     {
 
-        Dictionary<FoodItem, int> items;
+        Dictionary<string, int> items;
 
         public ShoppingList()
         {
-            this.items = new Dictionary<FoodItem, int>();
+            this.items = new Dictionary<string, int>();
         }
 
-        public Dictionary<FoodItem, int> Items
+        public Dictionary<string, int> Items
         {
             get { return this.items; }
         }
 
-        public void Add(FoodItem food, int servings)
+        public void Add(string food, int servings)
         {
             items.Add(food, servings);
         }
 
-        public void Remove(FoodItem food)
+        public void Remove(string food)
         {
             items.Remove(food);
         }
