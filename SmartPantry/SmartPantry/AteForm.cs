@@ -12,15 +12,18 @@ namespace SmartPantry
 {
     public partial class AteForm : Form
     {
-        public AteForm()
+        User user;
+        public AteForm(User user)
         {
             InitializeComponent();
+
+            this.user = user;
         }
 
         private void ateNewFoodButton_Click(object sender, EventArgs e)
         {
             // Functionality when "New Food" button clicked.
-            NewFood newFood = new NewFood();
+            NewFood newFood = new NewFood(user);
             newFood.Show();
 
         }
