@@ -34,5 +34,31 @@ namespace SmartPantry
             NewFood newFood = new NewFood(user);
             newFood.Show();
         }
+
+        private void boughtAndClear_Click(object sender, EventArgs e)
+        {
+            foreach (string item in user.UserShoppingList.Items.Keys)
+            {
+                bool found = false;
+                foreach (FoodItem foodItem in user.MyKitchen)
+                {
+                    if (item.Equals(foodItem.Name))
+                    {
+                        foodItem.TotalServings += user.UserShoppingList.Items[item];
+                        found = true;
+                    }
+                }
+                if (!found)
+                {
+                    NewFood newFoodForm = new NewFood(user, item, user.UserShoppingList.Items[item]);
+                    newFoodForm.Show();
+                }
+            }
+            user.UserShoppingList.Clear();
+
+            MessageBox.Show("Your kitchen has been updated!!");
+
+            this.Close();
+        }
     }
 }

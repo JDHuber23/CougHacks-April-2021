@@ -37,5 +37,10 @@ namespace SmartPantry
         {
             items.Remove(food);
         }
+
+        public void Clear()
+        {
+            this.items = new Dictionary<string, int>();
+        }
     }
 }

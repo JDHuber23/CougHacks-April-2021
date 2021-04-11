@@ -32,6 +32,7 @@ namespace SmartPantry
             this.shoppingList = new System.Windows.Forms.ListBox();
             this.newShoppingItemButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.boughtAndClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // shoppingList
@@ -45,7 +46,7 @@ namespace SmartPantry
             // newShoppingItemButton
             // 
             this.newShoppingItemButton.BackColor = System.Drawing.Color.Silver;
-            this.newShoppingItemButton.Location = new System.Drawing.Point(91, 428);
+            this.newShoppingItemButton.Location = new System.Drawing.Point(167, 428);
             this.newShoppingItemButton.Name = "newShoppingItemButton";
             this.newShoppingItemButton.Size = new System.Drawing.Size(131, 42);
             this.newShoppingItemButton.TabIndex = 2;
@@ -64,12 +65,23 @@ namespace SmartPantry
             this.label2.TabIndex = 3;
             this.label2.Text = "Shopping List";
             // 
+            // boughtAndClear
+            // 
+            this.boughtAndClear.Location = new System.Drawing.Point(32, 429);
+            this.boughtAndClear.Name = "boughtAndClear";
+            this.boughtAndClear.Size = new System.Drawing.Size(129, 38);
+            this.boughtAndClear.TabIndex = 4;
+            this.boughtAndClear.Text = "Purchase Items";
+            this.boughtAndClear.UseVisualStyleBackColor = true;
+            this.boughtAndClear.Click += new System.EventHandler(this.boughtAndClear_Click);
+            // 
             // ShoppingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(330, 479);
+            this.Controls.Add(this.boughtAndClear);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.newShoppingItemButton);
             this.Controls.Add(this.shoppingList);
@@ -85,5 +97,6 @@ namespace SmartPantry
         private System.Windows.Forms.ListBox shoppingList;
         private System.Windows.Forms.Button newShoppingItemButton;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button boughtAndClear;
     }
 }
