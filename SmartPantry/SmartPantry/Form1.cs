@@ -12,9 +12,17 @@ namespace SmartPantry
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        User user;
+        public Form1(User user)
         {
             InitializeComponent();
+            this.user = user;
+
+            // initialize the All foods tab here (since its the initial default tab)
+            foreach(var food in user.MyKitchen)
+            {
+                allFoodLB.Items.Add(food.Name);
+            }
         }
 
         private void cookedButton_Click(object sender, EventArgs e)
@@ -78,5 +86,71 @@ namespace SmartPantry
         {
             // Clicked on an item in the list.
         }
+
+        private void tabControl_Selected(object sender, TabControlEventArgs e)
+        {
+            if (e.TabPageIndex == 0)
+            {
+                // All foods tab
+
+                allFoodLB.Items.Clear();        
+                foreach (var food in user.MyKitchen)
+                {
+                    allFoodLB.Items.Add(food.Name);
+                }
+            }
+
+            else if (e.TabPageIndex == 1)
+            {
+                // Pantry Tab
+
+                pantryLB.Items.Clear();
+                foreach(var food in user.MyKitchen)
+                {
+                    if(food.Location == "Pantry")
+                    {
+                        pantryLB.Items.Add(food.Name);
+                    }
+                }
+            }
+            else if (e.TabPageIndex == 2)
+            {
+                //Refrigerator Tab
+
+                refrigeratorLB.Items.Clear();
+                foreach (var food in user.MyKitchen)
+                {
+                    if (food.Location == "Refrigerator")
+                    {
+                        refrigeratorLB.Items.Add(food.Name);
+                    }
+                }
+            }
+            else if (e.TabPageIndex == 3)
+            {
+                // Freezer tab
+
+                freezerLB.Items.Clear();
+                foreach (var food in user.MyKitchen)
+                {
+                    if (food.Location == "Freezer")
+                    {
+                        freezerLB.Items.Add(food.Name);
+                    }
+                }
+            }
+
+            else
+            {
+                // Recipes tab 
+
+                recipesLB.Items.Clear();
+                foreach (var recipe in user.Recipes)
+                {
+                    recipesLB.Items.Add(recipe.Name);
+                }
+            }
+        }
     }
 }
+

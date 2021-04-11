@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace SmartPantry
 {
-    class FoodItem
+    public class FoodItem
     {
         string name;
         string location;
         DateTime expirationDate;
-
         int totalServings;
 
         public FoodItem(string name, string location, DateTime expDate, int servings)
