@@ -29,6 +29,7 @@ namespace SmartPantry
             
             NewRecipeForm newRecipeForm = new NewRecipeForm(user);
             newRecipeForm.Show();
+            this.Close();
         }
 
         private void recipeSearchTB_TextChanged(object sender, EventArgs e)
@@ -53,6 +54,7 @@ namespace SmartPantry
                     break;
                 }
             }
+            if (recipe == null) return;
 
             // loop through the ingredients in the recipe and the users food items to find matches,
             // then decrement the users foodItem.totalServings 
@@ -73,6 +75,8 @@ namespace SmartPantry
             }
 
             MessageBox.Show("Your kitchen has been updated!");
+            this.Close();
         }
+
     }
 }

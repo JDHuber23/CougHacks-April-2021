@@ -37,7 +37,7 @@ namespace SmartPantry
 
             CookedForm cookedForm = new CookedForm(user); // Initialize new form
             cookedForm.Show(); // Show the new form
-            //this.Hide(); // Hide the current form
+             // Hide the current form
 
         }
 
@@ -58,7 +58,7 @@ namespace SmartPantry
              * If you click here, lists all food items currently in your shopping list.
              */
 
-            ShoppingForm shoppingForm = new ShoppingForm();
+            ShoppingForm shoppingForm = new ShoppingForm(user);
             shoppingForm.Show();
         }
 

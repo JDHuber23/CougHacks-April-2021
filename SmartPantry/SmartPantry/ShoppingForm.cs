@@ -12,15 +12,17 @@ namespace SmartPantry
 {
     public partial class ShoppingForm : Form
     {
-        public ShoppingForm()
+        private User user;
+        public ShoppingForm(User user)
         {
+            this.user = user;
             InitializeComponent();
         }
 
         private void newShoppingItemButton_Click(object sender, EventArgs e)
         {
             // Functionality when "New Shopping Item" button pushed.
-            NewFood newFood = new NewFood();
+            NewFood newFood = new NewFood(user);
             newFood.Show();
         }
     }

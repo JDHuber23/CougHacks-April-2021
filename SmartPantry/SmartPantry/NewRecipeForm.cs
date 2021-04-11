@@ -50,7 +50,7 @@ namespace SmartPantry
             {
                 MessageBox.Show(failedMessage, failedTitle);
             }
-
+            this.Close();
         }
 
         private void addRecipeItemButton_Click(object sender, EventArgs e)
