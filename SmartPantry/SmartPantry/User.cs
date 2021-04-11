@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace SmartPantry
 {
-    class User
+    public class User
     {
         private ShoppingList shoppingList;
-        List<FoodItem> mykitchen;
-        List<Recipe> recipes;
+        private List<FoodItem> mykitchen;
+        private List<Recipe> recipes;
         public User ()
         {
             shoppingList = new ShoppingList();
@@ -34,6 +34,16 @@ namespace SmartPantry
         {
             get { return recipes; }
             set { recipes = value; }
+        }
+
+        public void addFoodToKitchen(FoodItem food)
+        {
+            this.mykitchen.Add(food);
+        }
+
+        public void addRecipe(Recipe recipe)
+        {
+            this.recipes.Add(recipe);
         }
     } 
 

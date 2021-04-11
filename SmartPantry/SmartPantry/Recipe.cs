@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace SmartPantry
 {
-    class Recipe
+    public class Recipe
     {
         string name;
-        Dictionary<FoodItem, int> ingredients;
+        Dictionary<string, int> ingredients;
         string instructions;
 
-        public Recipe(string name, Dictionary<FoodItem, int> ingredients, string instructions)
+        public Recipe(string name, Dictionary<string, int> ingredients, string instructions)
         {
             this.name = name;
             this.ingredients = ingredients;
@@ -25,7 +25,7 @@ namespace SmartPantry
             set { name = value; }
         }
 
-        public Dictionary<FoodItem, int> Ingredients
+        public Dictionary<string, int> Ingredients
         {
             get { return ingredients; }
             set { ingredients = value; }

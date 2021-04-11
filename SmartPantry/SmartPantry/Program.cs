@@ -16,7 +16,35 @@ namespace SmartPantry
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+
+            User user = new User();
+
+            // fill user with info 
+            FoodItem food1 = new FoodItem("Bread", "Pantry", new DateTime(2020, 07, 11), 2);
+            FoodItem food2 = new FoodItem("Peanut Butter", "Pantry", new DateTime(2020, 07, 11), 1);
+            FoodItem food3 = new FoodItem("Jelly", "Refrigerator", new DateTime(2020, 07, 11), 1);
+            FoodItem food4 = new FoodItem("Chicken", "Freezer", new DateTime(2020, 07, 11), 4);
+
+
+            user.addFoodToKitchen(food1);
+            user.addFoodToKitchen(food2);
+            user.addFoodToKitchen(food3);
+            user.addFoodToKitchen(food4);
+
+            //Recipe
+            Dictionary<string, int> ingredients = new Dictionary<string, int>()
+            {
+                { "Bread", 2 },
+                {"Peanut Butter", 1 },
+                {"Jelly", 1 }
+            };
+
+            Recipe recipe = new Recipe("PB & J", ingredients, "These are the instructions.");
+
+            user.addRecipe(recipe);
+
+            Application.Run(new Form1(user));
         }
     }
 }

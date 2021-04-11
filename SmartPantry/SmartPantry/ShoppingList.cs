@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmartPantry
 {
-    class ShoppingList
+    public class ShoppingList
     {
 
         Dictionary<FoodItem, int> items;
