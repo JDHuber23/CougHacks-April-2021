@@ -42,6 +42,9 @@ namespace SmartPantry
                 newRecipeItemLB.Items.Clear();
                 recipeNameTB.Clear();
                 MessageBox.Show(successMessage, successTitle);
+
+                CookedForm newForm = new CookedForm(user);
+                newForm.Show();
             }
             else
             {

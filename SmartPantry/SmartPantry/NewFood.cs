@@ -12,8 +12,11 @@ namespace SmartPantry
 {
     public partial class NewFood : Form
     {
-        public NewFood()
+        User user;
+        public NewFood(User user)
         {
+            this.user = user;
+
             InitializeComponent();
         }
 

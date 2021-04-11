@@ -48,7 +48,7 @@ namespace SmartPantry
              * to deduct the amount. Ex: two servings of potato chips.
              */
 
-            AteForm ateForm = new AteForm();
+            AteForm ateForm = new AteForm(user);
             ateForm.Show();
         }
 
