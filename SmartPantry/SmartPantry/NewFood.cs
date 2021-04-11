@@ -13,11 +13,20 @@ namespace SmartPantry
     public partial class NewFood : Form
     {
         User user;
+        private string item;
+        private int v;
+
         public NewFood(User user)
         {
             this.user = user;
 
             InitializeComponent();
+        }
+
+        public NewFood(User user, string item, int amount) : this(user)
+        {
+            nameTextBox.Text = item;
+            quantityTextBox.Text = amount + "";
         }
 
         private void addNewFoodButton_Click(object sender, EventArgs e)
