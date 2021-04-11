@@ -12,38 +12,53 @@ namespace SmartPantry
 {
     public partial class NewRecipeForm : Form
     {
-        public NewRecipeForm()
+        Recipe recipe;
+        string instructions;
+        Dictionary<string, int> ingredients = new Dictionary<string, int>();
+        User user;
+        public NewRecipeForm(User user)
         {
             InitializeComponent();
+            this.user = user;
         }
-        private void recipeNameTB_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ingredient1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void quantity1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
 
         private void saveRecipeButton_Click(object sender, EventArgs e)
         {
             string successMessage = "Save successful!";
             string successTitle = "Success!";
-            string failedMessage = "Save not completed.";
+            string failedMessage = "Save not completed. Missing recipe name or recipe ingredients";
             string failedTitle = "Error";
-            /* Pseudocode below:
-             * if(save successful)
-             *      MessageBox.Show(successMessage, successTitle);
-             * else
-             *      MessageBox.Show(failedMessage, failedTitle);
-             */
+            if (recipeNameTB.Text != "" && ingredients.Count != 0)
+            {
+                if (newRecipeDescriptionTB.Text != "")
+                {
+                    instructions = newRecipeDescriptionTB.Text;
+                } else
+                {
+                    instructions = "";
+                }
+                recipe = new Recipe(recipeNameTB.Text, ingredients, instructions);
+                user.addRecipe(recipe);
+                newRecipeItemLB.Items.Clear();
+                recipeNameTB.Clear();
+                MessageBox.Show(successMessage, successTitle);
+            }
+            else
+            {
+                MessageBox.Show(failedMessage, failedTitle);
+            }
+
+        }
+
+        private void addRecipeItemButton_Click(object sender, EventArgs e)
+        {
+            if (ingredient1.Text != "" && quantity1.Text != "")
+            {
+                ingredients.Add(ingredient1.Text, Int32.Parse(quantity1.Text));
+                newRecipeItemLB.Items.Add(ingredient1.Text + " " + quantity1.Text);
+            }
+            ingredient1.Clear();
+            quantity1.Clear();
         }
 
         private void addRecipeItemButton_Click(object sender, EventArgs e)

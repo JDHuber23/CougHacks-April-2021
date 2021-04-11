@@ -35,7 +35,7 @@ namespace SmartPantry
              * from the master food list. Ex: PB&J
              */
 
-            CookedForm cookedForm = new CookedForm(); // Initialize new form
+            CookedForm cookedForm = new CookedForm(user); // Initialize new form
             cookedForm.Show(); // Show the new form
             //this.Hide(); // Hide the current form
 
